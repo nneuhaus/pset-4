@@ -4,6 +4,7 @@ const MAX = 9007199254740991;
 let Low=Number(readlineSync.question("\nLower Bound: "));
 let Up=Number(readlineSync.question("\nUpper Bound: "));
 let Sum=0
+do ()
 while (Low > Up ) {
     Low=Number(readlineSync.question("\nLower Bound: "));
     Up=Number(readlineSync.question("\nUpper Bound: "));
