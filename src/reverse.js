@@ -1,6 +1,6 @@
 const readlineSync = require("readline-sync");
 const MIN = 1;
-const MAX = Number.MAX_SAFE_INTEGER;
+const MAX = 9007199254740991
 Pos = Number(readlineSync.question("\nPositive integer: "));
 let Order = "";
 let Digit;

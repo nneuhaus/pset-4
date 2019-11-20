@@ -1,13 +1,13 @@
 const readlineSync = require("readline-sync");
 
 const MIN = 0
-const MAX = 900719925474099
+const MAX = 9007199254740991
 
 let Sum = 0
 let Integer = 0;
 let NumberValues = 0;
 
-console.log(\n"");
+console.log("\n");
 
 while (Integer >= MIN && Integer <= MAX) {
   Integer = readlineSync.question("Non-negative integer: ")
