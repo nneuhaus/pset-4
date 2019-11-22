@@ -1,21 +1,24 @@
 const readlineSync = require("readline-sync");
 const MIN = -9007199254740991;
 const MAX = 9007199254740991;
-Pos = Number(readlineSync.question("\nPositive integer: "));
-let Sum = 0;
-let Digit = 0;
+positive = Number(readlineSync.question("\nPositive integer: "));
+let sum = 0;
+let digit = 0;
 
-while (Number.isNaN(Pos) || !Number.isInteger(Pos) || Pos > MAX || Pos < MIN) {
-  Pos = Number(readlineSync.question("Positive integer: "));
+while (Number.isNaN(positive) || !Number.isInteger(positive) || positive > MAX || positive < MIN) {
+
+  positive = Number(readlineSync.question("Positive integer: "));
+
 }
-while (Pos != 0) {
-  Digit = Pos % 10;
-  Pos = Math.floor(Pos / 10);
+while (positive != 0) {
+  digit = positive % 10;
+  positive = Math.floor(positive / 10);
 
-  if (Digit % 2 != 0) {
+  if (digit % 2 != 0) {
 
-    Sum = Sum + Digit
+    sum = sum + digit
+
   }
 }
 
-console.log("\n" + Sum + ".\n");
+console.log("\n" + sum + ".\n");

@@ -10,9 +10,11 @@ let numberOfValues = 0;
 console.log("\n");
 
 while (integer >= MIN && integer <= MAX) {
+
   integer = readlineSync.question("Non-negative integer: ")
 
   if (integer >= MIN && integer <= MAX) {
+
      sum = parseFloat(sum) + parseFloat(integer);
         ++numberOfValues
 
