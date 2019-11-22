@@ -7,11 +7,10 @@ let Result = 0;
 
 for (let x = 2; x <= Integer/2; x++){
   Integer = Integer % x;
-  if(Integer == 0){
+  if (Integer == 0){
     console.log("\nNot Prime.");
     Result = 1;
   }
 }
 if (Result == 0){
-  console.log("\nPrime.");
-}
+  console.log("\nPrime."); }

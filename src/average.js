@@ -3,36 +3,36 @@ const readlineSync = require("readline-sync");
 const MIN = 0
 const MAX = 9007199254740991
 
-let Sum = 0
-let Integer = 0;
-let NumberValues = 0;
+let sum = 0
+let integer = 0;
+let numberOfValues = 0;
 
 console.log("\n");
 
-while (Integer >= MIN && Integer <= MAX) {
-  Integer = readlineSync.question("Non-negative integer: ")
+while (integer >= MIN && integer <= MAX) {
+  integer = readlineSync.question("Non-negative integer: ")
 
-  if (Integer >= MIN && Integer <= MAX) {
-     Sum = parseFloat(Sum) + parseFloat(Integer);
-        ++NumberValues
+  if (integer >= MIN && integer <= MAX) {
+     sum = parseFloat(sum) + parseFloat(integer);
+        ++numberOfValues
 
 
-    } else if (NumberValues == 0 && Integer < 0){
+    } else if (numberOfValues == 0 && integer < 0){
 
-      Integer = readlineSync.question("Non-negative integer: ");
+      integer = readlineSync.question("Non-negative integer: ");
 
-    } else if (NumberValues > 1 && Integer > MAX) {
+    } else if (numberOfValues > 1 && integer > MAX) {
 
-      Integer = readlineSync.question("Non-negative integer: ");
+      integer = readlineSync.question("Non-negative integer: ");
 
     } else {
   }
 }
 
-let Average = Sum / NumberValues
+let average = sum / numberOfValues
 
-Average = Average.toLocaleString("en", {minimumFractionDigits: 3, maximumFractionDigits: 3});
+average = average.toLocaleString("en", {minimumFractionDigits: 3, maximumFractionDigits: 3});
 
 
 
-console.log("\n" + Average + ".\n");
+console.log("\n" + average + ".\n");
